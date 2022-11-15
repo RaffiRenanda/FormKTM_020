@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Kartu Nikah</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        h1 {
+            color: silver;
+            font-style: oblique;
+            
+        }
+        body {
+            text-align: center;
+            background-color: brown;
+        }
+        fieldset{
+            background-color : maroon;
+        }
+        l {
+            color: white;
+            font-size: 24px;
+            font-style: italic;
+        }
+    </style>
+    </head>
+    <fieldset id="pfieldset" style="width: 400px">
+    <body>
+        <h1>Kartu Nikah</h1>
+        <hr/>
+    <l> Nama Suami:  </l>    
+    <l th:text="${sendnama}"></l>
+    <br/> <br/> 
+    <l> Nama Istri: </l>    
+    <l th:text="${sendpasangan}"></l>
+    <br/> <br/> 
+    <l> Alamat:  </l>    
+    <l th:text="${sendalamat}"></l>
+    <br/> <br/> 
+    <l> Tanggal Nikah: </l>
+    <l th:text="${sendtanggal}"></l>
+    <br/><!-- comment --><br/> 
+    <img style="float: right; width: 150px ; height: 200px" th:src="${sendgambar}"/>
+    
+    <img style="float: left; width: 150px ; height: 200px" th:src="${sendgambar2}"/><br><br>
+    
+   </body>
+    </fieldset>
+</html>
+
